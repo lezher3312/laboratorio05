@@ -20,6 +20,7 @@ public class nodoarbol {
         this.hijoIzquierdo=null;
     }
     public String toString(){
+        System.out.println("este es un mensaje nuevo ");
         return nombre + "su datos es" + dato;
     }
     
