@@ -9,6 +9,15 @@ package lab05;
  * @author josh
  */
 public class arbolavl {
+    nodoarbol raiz;
+    public arbolavl(){
+        raiz=null;
+        System.out.println("este es un mensaje nuevo ");
+    }
     
+    //metodo para insertar un nodo en el arbol
+    public void agregarnodo(int d, String nom){
+        
+    }
     
 }
