@@ -12,12 +12,34 @@ public class arbolavl {
     nodoarbol raiz;
     public arbolavl(){
         raiz=null;
-        System.out.println("este es un mensaje nuevo ");
+        System.out.println("se agrego un constructor ");
     }
     
     //metodo para insertar un nodo en el arbol
     public void agregarnodo(int d, String nom){
-        
+        nodoarbol nuevo = new nodoarbol(d,nom);
+        if (raiz ==null){
+            raiz=nuevo;
+        }else{
+            nodoarbol auxiliar =raiz;
+            nodoarbol padre;
+            while(true){
+                padre=auxiliar;
+                if(d<auxiliar.dato){
+                    auxiliar=auxiliar.hijoIzquierdo;
+                    if(auxiliar==null){
+                        padre.hijoIzquierdo=nuevo;
+                        return;
+                    }
+                }else{
+                    auxiliar=auxiliar.hijoDerecho;
+                    if(auxiliar ==null){
+                        padre.hijoDerecho=nuevo;
+                        return;
+                    }
+                }
+            }
+        }
     }
     
 }
