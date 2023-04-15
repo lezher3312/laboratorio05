@@ -13,9 +13,9 @@ public class nodoarbol {
     int dato;
     String nombre;
     nodoarbol hijoIzquierdo, hijoDerecho;
-    public nodoarbol(int d, String nom){
+    public nodoarbol(int d){
         this.dato=d;
-        this.nombre=nom;
+       // this.nombre=nom;
         this.hijoDerecho=null;
         this.hijoIzquierdo=null;
     }
